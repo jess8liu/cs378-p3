@@ -14,14 +14,15 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #525252;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-weight: bold;
 }
 
 .App-link {
@@ -37,10 +38,63 @@
   }
 }
 
-div.input {
-  display: flex;
+div {
+  display: block;
+  /* border: #282c34 2px dotted; */
+  padding: .5% 1% .5% 1%;
+}
+
+div.location-name {
+  background-color: #d1d1d1;
+  font-weight: bold;
+  font-size: large;
+}
+
+div.hourly-weather {
+  display: inline-block;
+  width: 95%;
+}
+
+div.hour {
+  display: inline;
+  float: left;
+  width: 45%;
+  font-size: small;
+}
+
+div.temp {
+  display: inline;
+  float: right;
+  width: 45%;
+  font-size: small;
+}
+
+header.header-input {
+  font-weight: bold;
+}
+
+header.header-weather {
+  font-size: medium;
+  font-weight: bold;
 }
 
 button.location {
-  margin: 1% 2% 1% 2%;
+  background-color: #d1d1d1;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 .5% 0 .5%;
+  padding: 1.5% 2% 1% 2%;
+  font-size: medium;
+}
+
+button.submit {
+  background-color: #d1d1d1;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 .5% 0 .5%;
+  font-size: medium;
+}
+
+button:hover {
+  background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
 }
