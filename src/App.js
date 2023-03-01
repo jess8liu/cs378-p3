@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 
 export default function App() {
@@ -23,6 +23,11 @@ export default function App() {
       Houston, TX
     </button>)
   ]);
+
+  // Automatically adds the Austin temperatures
+  useEffect(() => {
+    displayWeather('Austin, TX', 30.27, -97.74);
+  }, []);
 
   return (
     <div className='App'>
@@ -127,7 +132,7 @@ export default function App() {
                 </header>
               </div>
             </div>
-            
+
             {json.hourly.time.map((time, index) => (
               <div className='hourly-weather'>
                 <div className='hour'>
